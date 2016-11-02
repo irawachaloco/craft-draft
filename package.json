@@ -1,0 +1,28 @@
+{
+  "name": "craft-draft",
+  "version": "1.0.0",
+  "description": "Draft version for CMS projects ",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:http & npm run stylus:watch",
+    "start:http": "http-server public",
+    "stylus:once": "stylus ./public/stylus/main.styl --out ./public/css/style.css",
+    "stylus:watch": "stylus --watch ./public/stylus/main.styl --out ./public/css/style.css",
+    "dploy-install": "npm dploy install dploy --save",
+    "dploy-setup": "dploy install",
+    "dploy": "dploy",
+    "dploy-help": "dploy --help",
+    "dploy-catchup": "dploy dev --catchup",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irawachaloco/craft-draft.git"
+  },
+  "author": "irawachaloco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irawachaloco/craft-draft/issues"
+  },
+  "homepage": "https://github.com/irawachaloco/craft-draft#readme"
+}
