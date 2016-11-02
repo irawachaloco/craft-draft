@@ -1,21 +1,20 @@
-# craft-draft
+# craft-draft v.1.0
 
-# cc-catalogo v.1.0
 
 El proyecto está desarrollado en Craft CMS https://craftcms.com/
 
-Sin embargo, los carpetas centrales sobre las que corre el mismo CRAFT no se están versionando, asumiendo que habrá permanentes actualizaciones.
+Sin embargo, las carpetas centrales sobre las que corre el mismo CRAFT no se estarán versionando, asumiendo que habrá actualizaciones permanentemente.
 
-Este entorno es un proyecto con node.js que utiliza una herramienta (Dploy https://leanmeanfightingmachine.github.io/dploy/) para hacer ´deployments´ al ftp de manera automática.
+Este entorno es un proyecto con node.js que utiliza una herramienta (Dploy https://leanmeanfightingmachine.github.io/dploy/) para hacer ´deployments´ al ftp de manera sencilla.
 
 
-#Sobre Craft CMS
+##Sobre Craft CMS
 Para correr el proyecto localmente es recomendable obtener la última versión de Craft y descargar la carpeta ´app´ en la siguiente ruta build/craft/. Idealmente, las actualizaciones sobre la app deberán existir de manera local y en el servidor, Craft se encarga de dicha actualización, por lo que es importante mantener todas los entornos actualizados.
 
 
-#Configuración para proyecto base:
+##Configuración para proyecto base:
 
-##A) Para un nuevo proyecto:
+###A) Para un nuevo proyecto:
 1.Crear un repositorio para albergar el proyecto: directorio raiz.
 
 2.Se crea el package.json a través de la línea de comando con la instrucción
@@ -60,7 +59,7 @@ Una vez lista la configuración, se regresa al package.json para cambiar la conf
     deploy <server_name>
 Este comando hará el deploy a partir de la revisión de los últimos commits, es decir, subirá sólamente los cambios que estén versinados en los commits de git.
 
-##B) Si el proyecto existe:
+###B) Si el proyecto existe:
 1. Clonar el repositorio de github.
 2. Configurar los archivos en craft/config
 3. Dentro del directorio raíz del proyecto se deben instalar las dependencias (generar node_modules) a través del comando:

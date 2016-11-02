@@ -4,8 +4,7 @@
   "description": "Draft version for CMS projects ",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start:http & npm run stylus:watch",
-    "start:http": "http-server public",
+    "start": "npm run stylus:watch",
     "stylus:once": "stylus ./public/stylus/main.styl --out ./public/css/style.css",
     "stylus:watch": "stylus --watch ./public/stylus/main.styl --out ./public/css/style.css",
     "dploy-install": "npm dploy install dploy --save",
@@ -23,6 +22,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/irawachaloco/craft-draft/issues"
+  },
+  "dependencies": {
+    "stylus": "^0.54.5"
   },
   "homepage": "https://github.com/irawachaloco/craft-draft#readme"
 }
